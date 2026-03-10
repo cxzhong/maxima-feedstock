@@ -32,14 +32,6 @@ jobs:
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
-          - CONFIG: osx_64_
-            UPLOAD_PACKAGES: True
-            os: macos
-            runs_on: ['macos-15-intel']
-          - CONFIG: osx_arm64_
-            UPLOAD_PACKAGES: True
-            os: macos
-            runs_on: ['macos-latest']
     steps:
 
     - name: Checkout code
